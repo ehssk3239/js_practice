@@ -1,0 +1,64 @@
+  *{
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    border-radius: 5px;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #b0ccf1;
+  }
+  
+  .login-form {
+    display: block;
+    margin: auto;
+    
+    /* 정가운데 놓기 */
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    margin-left: -150px;
+    margin-top: -150px;
+
+    width: 300px;
+    padding: 20px;
+    background-color: #EEEFF1;
+  }
+  
+  .text-field {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+  }
+  .contents-field{
+    height: 400%;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-top:10px;
+    padding-left:10px;
+    padding-bottom:150px;
+    border: none;
+    font-size: 14px;
+  }
+  
+
+
+  .submit-btn {
+    width: 100%;
+    margin-bottom: 30px;
+    border: none;
+    padding: 10px;
+    background-color: #6996d1;
+    font-size: 14px;
+  }
+  
+  .links {
+    text-align: center;
+  }
+  
+  .links a {
+    color: #9B9B9B;
+    font-size: 12px;
+  }

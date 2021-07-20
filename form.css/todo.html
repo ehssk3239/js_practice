@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+	    <title>Todo Page</title>
+        <script>
+            function text_check(){
+
+            var data = document.getElementById("title").value;
+            var data2 = document.getElementById("contents").value;
+            var data3 = document.getElementById("birthdaytime").value;
+            
+            alert("제목 : "  + data + " 내용 : " + data2 + " 날짜 : " + data3);
+            }
+        </script>
+    </head>
+    
+    <body>
+	    
+    <div class="login-form">   
+	<form action="#" method="POST">
+        <fieldset>
+            <legend><strong>일정 입력</strong></legend>
+            <p>
+                <label for = "title"></label>
+                <input type="text" id = "title" name="title" class="text-field" placeholder="제목" >
+            </p>   
+
+            <p>
+                <label for = "contents"></label>
+                <input type="text" id = "contents" name="contents" class ="contents-field" placeholder="내용" />
+
+            </p>
+            <p>
+                <label for = "birthdaytime">날짜(date and time)  </label><br>    
+                <input type="datetime-local" id = "birthdaytime" name="birthdaytime">
+            </p>
+        </fieldset>
+	    <P>
+	        <input type="submit"  class = "submit-btn" value= "일정등록" onclick="text_check()">
+            <button type="button" class = "submit-btn" onclick="location.href='login.html'">뒤로가기</button>
+        </P>
+        </form>
+    </div>
+    </body>
+</html>

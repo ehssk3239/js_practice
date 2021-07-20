@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">    
+        <title>Entry Page</title> 
+
+        <script>
+            function pwLogin(){
+                var pw = document.getElementById("pw").value
+                var r_pw = document.getElementById("r_pw").value
+
+                if(pw === r_pw){
+                    alert("로그인합니다.")
+                    location.href='todo.html';
+                }else{
+                    alert("비밀번호가 맞지 않습니다.")
+                }
+            }
+            document.getElementById("login").onclick = pwLogin;
+        </script>
+    </head>   
+    <body>
+        <!--<h1>회원 가입 페이지</h1>-->
+        <div class="login-form">
+        <form action="#" method="POST">
+            <fieldset>
+                <legend><strong>필수 입력 사항</strong></legend>
+                <p>
+                    <label for = "id"></label>
+                    <input id = "id" type="text" name="mb_id"  class="text-field" placeholder="아이디" maxlength=20 size=20>
+                </p>
+                <p>
+                    <label for = "email"></label>
+                    <input id = "email" type="email" name="mb_email"class="text-field"  placeholder="e-mail" maxlength=20 size=20>
+                </p>
+                <p>
+                    <label for = "pw"></label>
+                    <input id = "pw" type="password" name="mb_pw" class="text-field" placeholder="비밀번호" maxlength=12 size=20>
+                </p>
+                <p>
+                    <label for = "r_pw"></label>
+                    <input id = "r_pw" type="password" name="mb_pw" class="text-field" placeholder="비밀번호 확인" maxlength=12 size=20>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>메일 수신 여부</strong></legend>
+                <p>    
+                    <input type="radio" id="agree" name="mail_received" value="agree">
+                    <label for="agree">예</label><br>
+                </p>
+                <p>    
+                    <input type="radio" id="disagree" name="mail_received" value="disagree">
+                    <label for="disagree">아니요</label><br>
+                </p>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>관심 분야 선택</strong></legend>
+                <p>    
+                    <input type="checkbox" id="AI" name="program" value="AI">
+                    <label for="AI">AI</label><br>
+                </p>
+                <p>    
+                    <input type="checkbox" id="IoT" name="program" value="IoT">
+                    <label for="IoT">IoT</label><br>
+                </p>
+                <p>    
+                    <input type="checkbox" id="BigData" name="program" value="BigData">
+                    <label for="BigData">BigData</label><br>
+                </p>
+                <p>    
+                    <input type="checkbox" id="Cloud" name="program" value="Cloud">
+                    <label for="Cloud">Cloud</label><br>
+                </p>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>직무 선택</strong></legend>
+                <p>    
+                    <select name="job" id ="job">
+                    <option value="Back-End Developer">Back-End Developer </option>
+                    <option value="Front-End Developer">Front-End Developer </option>
+                    <option value="Full-Stack Developer">Full-Stack Developer </option>
+                    <option value="DevOps Engineer">DevOps Engineer </option>
+                    <option value="Analsis">Analsis </option>
+                    <option value="Architect">Architect </option>
+                    </select>
+                </p>   
+            </fieldset>
+                <p>
+
+                    <button type="button" class = "submit-btn" onclick="pwLogin()">회원가입</button>
+                    <input type="reset" class = "submit-btn" value="초기화">
+                    
+                </p>
+        
+            
+        
+        </form>
+        </div>      
+    </body>
+</html>
+
+
+  
